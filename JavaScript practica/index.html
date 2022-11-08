@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    <title>Inka Andrade</title>
+
+    <script src="javascript.js"></script>
+
+</head>
+
+
+
+<body>
+
+<form>
+
+
+    <fieldset>
+
+        <legend>Convertir de Grados  Centigrados a Farenheit </legend>
+        
+        <br><br>
+
+        <label for="GradosCelsius">Ingresar valor</label>
+        <input type="text" value= "Ejemplo : 57" id = "GradosCelsius" name="GradosCelsius">
+
+    </fieldset>
+
+    <br><br>
+
+    <input type="button" value= "Calcular" id="button" name="obtenerCelsius" 
+    onclick="convertirGradosCentigradosAGradosFahrenheint(parseFloat(document.getElementById('GradosCelsius').value))" >
+    
+
+</form>
+<br>
+
+<h3> Aqui el resultado:</h3>
+<br>
+<span id="resultado"></span>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+<form>
+    <fieldset>
+        <legend>Porcentaje</legend>
+
+        <label for="CalcularPorcentaje">Ingrese el valor porfavor:</label>
+        <input type="text" value= "Cualquier numero..." id="Numero" name="Numero" >
+
+    </fieldset>
+
+    <br><br>
+    <input type="button" value="Enviar a calcular" id = "button"name="obtenerPorcentaje"
+    onclick="calcularPorcentajes(parseFloat(document.getElementById('Numero').value))"  >
+
+</form>
+
+<br>
+
+<h3>Este es el resultado:</h3>
+<br>
+<span id = "porcentaje"></span>
+
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+    <form>
+        
+    
+    <fieldset>
+
+        <legend>Crear tabla</legend>
+
+        <label for="IngreseFilas">Introdusca  las Filas:</label>
+        <input type="text" value="" id="filas" name="filas">
+        <br><br>
+        <label for="IngreseColumnas">Introdusca las Columnas:</label>
+        <input type="text" value="" id="columnas" name="columnas">
+    </fieldset>
+    <input type="button" value="Crear:" name="obtC" 
+    onclick="generarTablaHTML(parseFloat(document.getElementById('filas').value))">
+
+    <br>
+    <br>
+
+    <h3>Esta es la tabla:</h3>
+    <br>
+    <span id="respuesta"></span>
+    
+
+    </form>
+
+
+
+</html>
