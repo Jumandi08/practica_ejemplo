@@ -1,0 +1,51 @@
+
+/*Imagen*/
+.contenedor-imagen {
+    width: 752px;
+    height: 315px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 51px;
+    margin-bottom: 5px;
+}
+
+.imagenp {
+
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 800px;
+    top: 367px;
+}
+
+.imagenp2{
+    
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 800px;
+    top: 532px;
+
+}
+
+.nieve {
+    width: 10px;
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    position: static;
+
+}
+
+.puente{
+    width: 10px;
+    height: 10px;
+    margin-left: 20px;
+    margin-right: auto;
+    margin-top: 350px;
+    margin-bottom: 5px;
+    position: static;
+
+}

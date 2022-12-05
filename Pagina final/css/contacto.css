@@ -1,0 +1,56 @@
+/* Cuadro contactar*/
+
+.cuadro{
+    position: static;
+    top: 400px;
+   left: 290px;
+    width: 250px;
+    bottom: 1000px;
+}   
+
+.contacto{
+    border-radius: 4%;
+    width: 100%;
+    padding: 40px;
+    background: #D0D3D4 ;
+    position: static;
+}
+.contacto h2{
+    font-size: 30px;
+    color: #34495E;
+    font-weight: 500;
+    position: static;
+}
+.contacto .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    position: static;
+}
+
+.contacto .inputBox span{
+    position: relative;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+    position: static;
+}
+.contacto .inputBox input:focus ~ span,
+.contacto .inputBox input:valid ~ span
+.contacto .inputBox textarea:focus ~ span,
+.contacto .inputBox textarea:valid ~ span
+    {
+    color: white;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+
+.imputbox{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+          
+            

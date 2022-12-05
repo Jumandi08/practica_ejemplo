@@ -1,0 +1,184 @@
+
+
+
+/* estilos generales para todo el cuerpo */
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: grey;
+    
+    margin: 0;
+
+                     /* Opcional :background-color:#c0c0c0;*/
+
+    background-color: #eaf9f7;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #76c0f7;
+    font-weight:600;
+}
+
+h1 {
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 25px;
+    color: #3E4344;
+    
+}
+
+h2 {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #67948f;
+}
+h3 {
+    font-size: 150%;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #557070;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+p {
+    text-align: justify;
+}
+
+
+
+
+/* estilo para el header de la pagina */
+#encabezadoprincipal{
+    width: 100%;
+    height: 90px;
+    background-color:#f4f4f4;
+    border-bottom: 1px solid white;
+    position: fixed;
+}
+
+/* estilo para todos los div contenedores principales de la pagina */
+.contenedor{
+    width: 1350px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+/* estilos para los modulos de la cabecera */
+.modulo {
+    height: 90px;
+    box-sizing: border-box;
+    line-height: 90px;
+}
+.mod-logo {
+    float: left;
+    padding-top: 10px;
+}
+/* estilo para el img logo de la cabecera */
+#logo {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+.mod-izq {
+    float: left;
+    margin-left: 50px;
+}
+.mod-izq a{
+    color: #5f6769;
+}
+.mod-izq a:hover{
+    color: #3E4344;
+}
+.titulo-sitio {
+    font-size: 140%;
+}
+.mod-der {
+    float: right;
+}
+
+#menuprincipal {
+    font-size: 110%;
+}
+#menuprincipal a {
+    padding-right: 15px;
+    color: #5f6769;
+}
+#menuprincipal a:hover {
+    padding-right: 15px;
+    color: #418858;
+}
+
+/* contenido principal */
+#contenidoprincipal {
+    float:left;
+    padding-right: 15px;
+    width: 770px;
+    box-sizing: border-box;
+}
+.contacto-articulo {
+    font-size: 90%; 
+}
+.fecha-articulo {
+    font-size: 70%;
+    color:#6fb98f;
+}
+
+
+/* seccion lateral de enlaces relacionados */
+#enlacesrel {
+    float:right;
+    padding-left:15px;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+.contenedor-enlaces {    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    background-color: #f4f4f4;
+    
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contenedor-enlaces h3 {
+    background-color: #E1E3E3;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+

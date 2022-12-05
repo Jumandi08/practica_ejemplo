@@ -1,0 +1,36 @@
+/* seccion lateral de enlaces relacionados */
+#enlacesrel {
+    float:right;
+    padding-left:15px;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+.contenedor-enlaces {    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    background-color: #f4f4f4;
+    
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contenedor-enlaces h3 {
+    background-color: #E1E3E3;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+}

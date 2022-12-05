@@ -1,0 +1,40 @@
+/* footer - pie de pagina final */
+#footerpagina {
+    background-color: #232020;
+    width: 100%;
+    height: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.mod-pie-pag {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.pie-pag-izq {
+    float: left;
+}
+.pie-pag-der {
+    float: right;
+}
+
+.pie-nombre-marca {
+    font-size: 200%;
+}
+
+.pie-derechos-aut {
+    font-size: 80%;
+}
+
+.mod-pie-pag address {
+    font-size: 80%;
+    padding-top: 10px;
+}
+
+#footerpagina{
+    position: absolute;
+    top: 1500px;
+
+}
