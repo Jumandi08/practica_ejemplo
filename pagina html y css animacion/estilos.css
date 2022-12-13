@@ -1,0 +1,344 @@
+
+
+/**{
+    border-width: 1px;
+    border-color: brown;
+    border-style: solid;
+}
+*/
+
+
+/*  Cuerpo de pagina*/
+#cuerpo {
+    width: 100%;
+    height: 100%;
+    margin: 1px 300px;
+    width: 70%;
+    
+
+
+    background-image: url(./imagenes/final.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1800px;
+    background-attachment: fixed;
+    background-size: cover;
+    
+ 
+}
+
+/*Seccion de navegacion*/
+
+.contenedorNav{
+    background-color: #b2afafad;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+
+   
+
+
+
+}
+
+#logo{
+    width: 150px;
+    margin: 10px 0px 1px 40px;
+    transition: 0.3s;
+}
+#logo:hover{
+    transform: rotate(10deg);
+
+}
+
+#navegacion{
+   
+    margin: 0px 500px 20px 250px;
+    position: absolute;
+    top: 60px;
+    
+    padding: 10px 0px;
+   
+    
+    
+    
+}
+#navegacion a {
+    padding: 20px;
+    font-family: fantasy;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+
+#navegacion a:hover{
+
+    color: rgb(208, 201, 201);
+    
+
+}
+
+
+
+
+
+/*Contenido de imagenes.*/
+
+#contenidoPrincipal{
+    background-color:#ffffffad ;
+    overflow: hidden;
+
+    
+    border-top-left-radius:15px ;
+    border-top-right-radius: 15px;
+    
+
+
+}
+
+
+
+#contenidoPrincipal .renderimg{
+    margin: 10px; 
+    transition: 0.5s;
+    object-fit: cover ; /*Esto es para que no se distocione*/
+}
+#contenidoPrincipal .renderimg:hover{
+    transform: scale(1.6);
+
+}
+
+
+#contenidoPrincipal .letragaleria{
+
+    
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(61, 77, 77, 0.858);
+    color: rgb(245, 238, 238);
+    font-size: 100px;
+    transition: 0.2s;
+    text-decoration: none;
+    position: absolute;
+    left: 800px;
+    padding: 0px;
+    font-family: fantasy;
+   top: 500px;
+   
+  
+}
+
+
+#contenidoPrincipal .letragaleria:hover{
+   
+    transform: scale(1.2);
+
+}
+
+/*Seccion 2 de imagen*/
+
+/*IMAGEN 1*/
+
+#contenidoSecundario{
+    background-color:#ffffffad ;
+
+    height: 25%;
+   
+
+}
+
+
+#contenidoSecundario .nieve{
+    margin: 30px 10px 10px 30px;
+    
+    
+
+}
+
+#contenidoSecundario .letranieve{
+
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(61, 77, 77, 0.858);
+    color: rgb(245, 238, 238);
+    font-size: 50px;
+    transition: 0.2s;
+    text-decoration: none;
+    position: absolute;
+    text-align: center;
+    top: 1000px;
+    right: 1200px;
+    padding:0;
+    font-family: fantasy;
+}
+
+
+#contenidoSecundario .letranieve:hover{
+    transform: scale(1.2);
+
+}
+
+/*IMAGEN 2*/
+
+#contenidoSecundario .arbolimg{
+    margin: 30px 0px 10px 50px;
+}
+
+
+
+#contenidoSecundario .letraarbol{
+
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(61, 77, 77, 0.858);
+    color: rgb(245, 238, 238);
+    font-size: 50px;
+    transition: 0.2s;
+    text-decoration: none;
+    position: absolute;
+    top: 1000px;
+    right: 600px;
+    padding:0;
+    font-family: fantasy;
+
+   
+
+}
+#contenidoSecundario .letraarbol:hover{
+
+    transform: scale(1.2);
+
+}
+
+
+/*Relleno*/
+
+@keyframes letra{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(150px);
+        
+    }
+
+    
+}
+
+/*Cuando se hace click*/
+#relleno .letra:active{
+
+    animation: letra .5s ease-out;
+
+
+}
+
+
+#relleno{
+    background-color: #ffffffad;
+    height: 25%;
+    overflow: hidden; /*Cuando sale un abejto de su contenedor, ya no sera visible*/
+  
+    
+}
+#relleno .letra{
+
+    color: rgb(208, 224, 238);
+    font-family: fantasy;
+    font-size: 100px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(22, 27, 27, 0.858);
+    text-align: center;
+    transition: 0.1s;
+    position: absolute;
+    left: 750px;
+    border-color: gainsboro;
+    padding: 1px 30px;
+    border-radius: 10px;
+    background-color: rgba(227, 222, 217, 0.402);
+
+  
+    
+
+}
+
+
+
+
+/*sobre la letra*/
+#relleno .letra:hover{
+
+    transform: scale(1.2);
+    
+
+}
+
+
+
+
+
+
+
+ 
+
+/* footer - pie de pagina final */
+#footerpagina {
+    background-color: #232020;
+    width: 70%;
+    height: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 1680px; 
+    bottom: 0px;
+    
+    
+}
+
+.modulo-pie {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.pie-pag-izquierdo {
+    float: left;
+}
+.pie-pag-der {
+    float: right;
+}
+
+.pie-marca {
+    font-size: 200%;
+    color: white;
+}
+
+.pie-derechos {
+    font-size: 80%;
+    color: white;
+}
+
+.modulo-pie address {
+    font-size: 80%;
+    padding-top: 10px;
+    color:white;
+}
+
+.direc{
+    text-decoration: none;
+    color: rgb(97, 97, 172);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
