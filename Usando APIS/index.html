@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi página</title>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+
+    <style>
+
+      /* boceto */
+/* 
+*{
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+}
+*/
+
+
+
+
+
+      /* Establece la fotografía de fondo */
+      body {
+        background-image: url("hierva.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        font-size: 16px; /* Tamaño base de la letra */
+        height: 1000px;
+      }
+
+      /* Centra el contenido principal */
+      .contenido {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8); 
+        padding: 20px;
+        
+        border-top-right-radius:10px;
+        border-top-left-radius:10px;
+        height: 1000px;
+        
+      }
+
+      /* Estilo del menú de navegación */
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+       /* background-color: rgba(255, 255,255, 0.8);*/
+        color:#333;
+        /*border-radius: 10px;*/
+        width: 61%;
+        margin: 0 auto;
+        background-color: #b2afafad;
+        border-bottom-right-radius:10px;
+        border-bottom-left-radius:10px;
+       
+        
+      }
+
+      /* Oculta el menú en dispositivos pequeños */
+      .menu-movil {
+        display: none;
+      }
+
+      /* Aumenta el tamaño de la letra en dispositivos grandes */
+      @media (min-width: 1200px) {
+        body {
+          font-size: 18px;
+        }
+      }
+
+      /* Ajusta el tamaño del contenido en dispositivos móviles */
+      @media (max-width: 600px) {
+        .contenido {
+          width: 90%;
+        }
+
+        /* Aumenta el tamaño de la letra en dispositivos pequeños */
+        body {
+          font-size: 14px;
+        }
+
+        /* Muestra el menú en dispositivos pequeños */
+        .menu-movil {
+          display: block;
+        }
+
+        /* Oculta el menú en dispositivos pequeños */
+        .menu {
+          display: none;
+        }
+
+
+
+        
+      }
+
+      .menu a {
+    padding: 10px;
+    font-family: fantasy;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    
+    
+}
+
+
+.menu a:hover{
+
+    color: rgb(208, 201, 201);
+    
+
+}
+
+#miChart{
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: rgb(231, 241, 245);
+}
+#logo{
+    width: 150px;
+    margin: 10px 0px 1px 40px;
+    transition: 0.3s;
+    }
+
+
+
+/*PIE DE PAGINA*/
+
+#footerpagina{
+  display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+       /* background-color: rgba(255, 255,255, 0.8);*/
+        color:#333;
+        /*border-radius: 10px;*/
+        width: 61%;
+        margin: 0 auto;
+        
+        background-color: #23202097;
+
+        bottom: 0px;
+
+}
+.modulo-pie {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+.pie-pag-izquierdo {
+    float: left;
+}
+.pie-pag-der {
+    float: right;
+}
+
+.pie-marca {
+    font-size: 200%;
+    color: white;
+}
+
+.pie-derechos {
+    font-size: 80%;
+    color: white;
+}
+
+.modulo-pie address {
+    font-size: 80%;
+    padding-top: 10px;
+    color:white;
+   
+}
+
+.direc{
+    text-decoration: none;
+    color: rgb(97, 97, 172);
+    
+}
+
+.redes {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    
+
+  
+    
+    <nav class="menu">
+
+      <a href="index.html"><img id="logo" src="imagenes/logo.png"></a>
+
+      <a href="#">Inicio</a>
+      <a href="#">Quienes Somos</a>
+      <a href="#">Contacto</a>
+    </nav>
+  
+
+    <br>
+    <nav class="menu-movil">
+      <a href="#">Menú</a>
+    </nav>
+    <div class="contenido">
+      <h1 style="font-family: fantasy; letter-spacing: 2px; ">Chart.js</h1>
+
+      <canvas id="miChart"   height="80%" ></canvas>
+
+      <script type="text/javascript" >
+
+        var ctx = document.getElementById('miChart').getContext('2d');
+        ctx.fillstyle = "gray"
+       
+
+
+
+
+
+var miChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes'],
+        datasets: [{
+            label: 'Ventas',
+            data: [12, 19, 3, 5, 2],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+        
+    
+
+
+
+
+
+</script>
+
+    
+
+</div>
+
+
+
+
+
+<footer id="footerpagina">
+  <div class="contenedor">
+      
+      <div class="modulo-pie pie-pag-izquierdo">
+          <span class="pie-marca">Inka Jumandi Andrade Medina</span><br>
+          <span class="pie-derechos">©2022, Todos los derechos estas reservados o protegidos</span>
+      </div>
+      
+      <div class="modulo-pie pie-pag-der">
+          <address>
+              Ecuador, Loja
+              <br>
+              Avenida. Turuhuayco-Calle obrero
+              <br><br>
+              Tel: <a href="https://wa.me/593986789559?text=Buenas%20Noches%20,necesito%20ayuda." target="_blank" class="direc">0986789559</a>
+              <br>
+              Correo:   <a href="https://mail.google.com/mail/u/1/#inbox?compose=new" target="_blank" class="direc">jumandimedina@gmail.com</a>
+
+          </address>
+      </div>
+      
+      
+              
+  </div>
+
+  <div class="redes">
+
+  
+      <a href="https://twitter.com/Jumand_medina" target="_blank"><img src="imagenes/twiter.png" width="50" height="50"></a>
+
+      <a href="https://www.instagram.com/jumand_medina/" target="_blank"><img src="imagenes/instagram.png" width="50" height="50"></a>
+
+      <a href="https://www.facebook.com/123huevos" target="_blank"><img src="imagenes/facebook.png" width="50" height="50"></a>
+
+    </div>
+
+
+    </section>
+      
+</footer>
+
+
+
+
+      
+    
+
+
+
+
+
+
+    
+
+
+
+</body>
+</html>
